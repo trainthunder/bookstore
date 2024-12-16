@@ -1,101 +1,659 @@
-import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <div className="pt-[200px] flex items-center justify-center">
+        <Carousel className="w-[1700px] h-[500px] text-center bg-black">
+          <CarouselContent>
+            <CarouselItem>5555555555555555555555555555</CarouselItem>
+            <CarouselItem>55555555555555555555555555555555555555</CarouselItem>
+            <CarouselItem>5555555555555555555555555555555</CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
+      <div className="flex justify-center items-center gap-10 pt-[50px]">
+        <button className="w-[180px] h-[180px] bg-[#daffd1] rounded-full">
+          มังงะ/การ์ตูน
+        </button>
+        <button className="w-[180px] h-[180px] bg-[#fff8de] rounded-full">
+          นิยาย/วรรณกรรม
+        </button>
+        <button className="w-[180px] h-[180px] bg-[#fdffd6] rounded-full">
+          สำหรับเด็ก
+        </button>
+        <button className="w-[180px] h-[180px] bg-[#ffe9cf] rounded-full">
+          นิตยสาร
+        </button>
+        <button className="w-[180px] h-[180px] bg-[#ffedfe] rounded-full">
+          ทั่วไป/อื่นๆ
+        </button>
+        <button className="w-[180px] h-[180px] bg-[#ffe0e0] rounded-full">
+          พรีออเดอร์
+        </button>
+      </div>
+      {/* Daily books */}
+      <div className="pb-20 pt-[50px] flex flex-col items-center gap-2 bg-[#e1ffff] mt-[50px] ">
+        <h1 className="text-center text-[32px] font-semibold">
+          หนังสือออกใหม่ประจำเดือน{" "}
+          <span className="text-green-500">ธ.ค. 2567</span>
+        </h1>
+        <div className="flex justify-center items-center gap-10 pt-[50px]">
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <button className="w-[140px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500 mt-28">
+          ดูทั้งหมด
+        </button>
+      </div>
+
+      {/* TOP 10 books */}
+      <div className="flex flex-col justify-center items-center bg-[#fdf6ba] pb-10">
+        <h1 className="text-center text-[32px] font-semibold mt-16">
+          TOP 10 หนังสือยอดนิยม
+        </h1>
+        {/* row 1 */}
+        <div className="flex justify-center items-center gap-10 pt-[50px]">
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+        </div>
+        {/* row 2 */}
+        <div className="flex justify-center items-center gap-10 pt-[50px]">
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Daily Books */}
+      <div className="flex flex-col  justify-center items-center bg-[#ddffda] pb-20">
+        <div>
+          <h1 className="mt-20 text-3xl font-semibold">แนะนำโดย BookStore</h1>
+          <p className="mt-2">มัดรวมมาให้แบบจัดเต็ม</p>
+        </div>
+        {/* row 1 */}
+        <div className="flex justify-center items-center gap-10 pt-[50px]">
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+        </div>
+        {/* row 2 */}
+        <div className="flex justify-center items-center gap-10 pt-[50px]">
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+        </div>
+        <button className="w-[140px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500 mt-28">
+          ดูทั้งหมด
+        </button>
+      </div>
+      {/* ความเคลื่อนไหว */}
+      <div className="flex flex-col  justify-center items-center gb-[#ffffff] pb-20">
+        <h1 className="mt-20 mb-10 text-3xl font-semibold">ความเคลื่อนไหว</h1>
+        <Carousel className="w-[1700px] h-[500px] text-center bg-black">
+          <CarouselContent>
+            <CarouselItem>5555555555555555555555555555</CarouselItem>
+            <CarouselItem>55555555555555555555555555555555555555</CarouselItem>
+            <CarouselItem>5555555555555555555555555555555</CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+
+        <button className="w-[140px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500 mt-28">
+          ดูทั้งหมด
+        </button>
+      </div>
+      {/* Books sale */}
+      <div className="flex flex-col justify-center items-center gap-10 pt-[50px] pb-20 bg-[#ffddf2]">
+        <h1 className="mt-20 mb-10 text-3xl font-semibold">ลกราคาพิเศษ</h1>
+        {/* row 1 */}
+        <div className="flex justify-center items-center gap-10 pt-[50px]">
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+        </div>
+
+        {/* row2 */}
+        <div className="flex justify-center items-center gap-10 pt-[50px]">
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <a className="hover:text-green-500" href="#">
+              <p className="text-sm pt-2">type of books</p>
+            </a>
+            <a className="hover:text-green-500" href="#">
+              <h3 className="text-xl">Name of books</h3>
+            </a>
+            <h1 className="pt-6 pb-2 text-red-700 text-xl font-[650] ">
+              199.50 บาท
+            </h1>
+            <button className="w-[200px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500">
+              เพิ่งลงตะกร้า
+            </button>
+          </div>
+        </div>
+        <button className="w-[140px] h-[50px] bg-black text-white rounded-3xl hover:bg-green-500 mt-16">
+          ดูทั้งหมด
+        </button>
+      </div>
     </div>
   );
 }
