@@ -1,4 +1,6 @@
 const ProductListPage = () => {
-  return <div>ProductListPage</div>;
+  return <div className="pt-[200px]">
+    
+  </div>;
 };
 export default ProductListPage;

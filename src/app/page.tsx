@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <div>
       <div className="pt-[200px] flex items-center justify-center">
-        <Carousel className="w-[1700px] h-[500px] text-center bg-black">
+        <Carousel className="w-[1700px] h-[500px] text-center border-[1px] border-black">
           <CarouselContent>
-            <CarouselItem>5555555555555555555555555555</CarouselItem>
-            <CarouselItem>55555555555555555555555555555555555555</CarouselItem>
-            <CarouselItem>5555555555555555555555555555555</CarouselItem>
+            <CarouselItem></CarouselItem>
+            <CarouselItem></CarouselItem>
+            <CarouselItem></CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
@@ -48,7 +48,7 @@ export default function Home() {
         </h1>
         <div className="flex justify-center items-center gap-10 pt-[50px]">
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -63,7 +63,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -78,7 +78,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -93,7 +93,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -108,7 +108,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -136,7 +136,7 @@ export default function Home() {
         {/* row 1 */}
         <div className="flex justify-center items-center gap-10 pt-[50px]">
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -152,7 +152,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -168,7 +168,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -184,7 +184,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -200,7 +200,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -218,7 +218,7 @@ export default function Home() {
         {/* row 2 */}
         <div className="flex justify-center items-center gap-10 pt-[50px]">
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -234,7 +234,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -250,7 +250,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -266,7 +266,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -282,7 +282,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -308,7 +308,7 @@ export default function Home() {
         {/* row 1 */}
         <div className="flex justify-center items-center gap-10 pt-[50px]">
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -323,7 +323,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -338,7 +338,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -353,7 +353,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -368,7 +368,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -386,7 +386,7 @@ export default function Home() {
         {/* row 2 */}
         <div className="flex justify-center items-center gap-10 pt-[50px]">
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -401,7 +401,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -416,7 +416,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -431,7 +431,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -446,7 +446,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -468,11 +468,11 @@ export default function Home() {
       {/* ความเคลื่อนไหว */}
       <div className="flex flex-col  justify-center items-center gb-[#ffffff] pb-20">
         <h1 className="mt-20 mb-10 text-3xl font-semibold">ความเคลื่อนไหว</h1>
-        <Carousel className="w-[1700px] h-[500px] text-center bg-black">
+        <Carousel className="w-[1700px] h-[500px] text-center border-[1px] border-black">
           <CarouselContent>
-            <CarouselItem>5555555555555555555555555555</CarouselItem>
-            <CarouselItem>55555555555555555555555555555555555555</CarouselItem>
-            <CarouselItem>5555555555555555555555555555555</CarouselItem>
+            <CarouselItem></CarouselItem>
+            <CarouselItem></CarouselItem>
+            <CarouselItem></CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
@@ -488,7 +488,7 @@ export default function Home() {
         {/* row 1 */}
         <div className="flex justify-center items-center gap-10 pt-[50px]">
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -504,7 +504,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -520,7 +520,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -536,7 +536,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -552,7 +552,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -571,7 +571,7 @@ export default function Home() {
         {/* row2 */}
         <div className="flex justify-center items-center gap-10 pt-[50px]">
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -587,7 +587,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -603,7 +603,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -619,7 +619,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>
@@ -635,7 +635,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <img className="w-[230px] h-[300px] bg-black " src="#" alt="" />
+            <img className="w-[230px] h-[300px]  " src="#" alt="" />
             <a className="hover:text-green-500" href="#">
               <p className="text-sm pt-2">type of books</p>
             </a>

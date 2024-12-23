@@ -1,4 +1,4 @@
 const ProductPage = () => {
-  return <div>ProductPage</div>;
+  return <div className="pt-[200px]">ProductPage</div>;
 };
 export default ProductPage;
